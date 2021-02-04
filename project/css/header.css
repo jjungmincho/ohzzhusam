@@ -9,10 +9,9 @@ header {
 ------------
 */
 .main-header {
-    position: fixed;
-    width: 100vw;
-    z-index: 1;
+    position: relative;
     padding: 0 20px;
+    box-shadow: var(--box-shadow);
 }
 
 .top-nav {
