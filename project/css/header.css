@@ -75,6 +75,10 @@ header {
         color: var(--color-brown);
     }
 
+    .nav-link:hover {
+        color: var(--color-yellow);
+    }
+
     #cta {
         display: flex;
         padding: 10px 20px;
@@ -86,11 +90,14 @@ header {
     }
 
     #cta:hover {
-        background-color: var(--color-brown);
+        background-color: var(--color-yellow);
+        color: var(--color-white);
     }
 
     #cta:active {
         transform: scale(.85);
+        background-color: var(--color-yellow);
+        color: var(--color-white);
     }
 
 }

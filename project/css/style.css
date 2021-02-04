@@ -101,10 +101,7 @@ a {
     font-weight: 900;
     font-size: 1.15rem;
     text-decoration: none;
-}
-
-a:hover {
-    color: var(--color-red);
+    color: var(--color-white);
 }
 
 button {
