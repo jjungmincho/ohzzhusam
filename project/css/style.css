@@ -1,0 +1,130 @@
+@import url("reset.css");
+@import url("header.css");
+@import url("footer.css");
+
+
+
+/* Global Variables */
+:root {
+    /* color */
+  --color-dark-black:#000;
+  --color-black:#090909;
+  --color-red: #FF0000;
+  --color-white: #fff;
+  --color-grey: #8A8A8A;
+  --color-light-yellow: #FDF1D8;
+  --color-yellow: #FFB938;
+  --color-light-brown: #953026;
+  --color-brown: #3A0706;
+
+    /* shadow */
+  --box-shadow: 1px 1px 2px grey; 
+}
+
+
+/* Global Layout */
+html {
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  background-color: grey;
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+nav {
+    border: none;
+    text-transform: uppercase;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/* Typography */
+h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+p, li, em {
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+em {
+    color: var(--color-red);
+}
+
+span {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+a {
+    font-weight: 900;
+    font-size: 1.15rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-red);
+}
+
+button {
+    font-weight: 900;
+    font-size: 1.15rem;
+}
+
+
+/* 
+------------
+ Id Selectors
+------------
+*/
+#wrapper {
+    background-color: white;
+    width: 90%;
+    min-height: 100vh;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;  
+}
