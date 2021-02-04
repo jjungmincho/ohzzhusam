@@ -1,10 +1,6 @@
 header {
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
-    position: fixed;
-    width: 100vw;
-    z-index: 1;
-    padding: 0 20px;
 }
 
 /* 
@@ -12,6 +8,13 @@ header {
  Class Selectors
 ------------
 */
+.main-header {
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    padding: 0 20px;
+}
+
 .top-nav {
     display: flex;
     justify-content: space-between;
@@ -24,15 +27,19 @@ header {
     padding: 10px 0;
 }
 
-.hamburger-btn {
+.btn {
     display: block;
     border: none;
 	background-color: transparent;
     padding-right: 12px;
 }
 
-.hamburger-btn i {
+.btn i {
     color: var(--color-red);
+}
+
+.fb_iframe_widget {
+    display: none;
 }
 
 .nav-li,
@@ -53,12 +60,8 @@ header {
         align-items: center;
     }
 
-    .hamburger-btn {
+    .btn {
         display: none;
-    }
-
-    nav {
-        display: block;
     }
 
     .nav-ul {
@@ -97,6 +100,10 @@ header {
     #cta:active {
         transform: scale(.85);
         background-color: var(--color-yellow);
+        color: var(--color-white);
+    }
+
+    #cta > a {
         color: var(--color-white);
     }
 

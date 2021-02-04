@@ -1,0 +1,65 @@
+.navigation-header {
+    background-color: transparent;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.navigation-header > img {
+    width: 250px;
+    padding: 20px;
+}
+
+.navigation-header > button {
+    padding: 20px;
+}
+
+.navigation-link-container {
+    padding: 10px;
+    text-align: right;
+}
+
+.navigation-link-container li {
+    padding: 20px;
+}
+
+.navigation-link-container nav li a {
+    color: var(--color-brown);
+    font-size: 2.5rem;
+}
+
+.navigation-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 10px 30px 0 0;
+}
+
+.navigation-footer > span {
+    padding: 5px 0;
+}
+
+
+/* 
+------------
+ Id Selectors
+------------
+*/
+#navigation-bg {
+    background-color: var(--color-light-yellow);
+}
+
+#nav-sns-icons {
+    padding: 15px 15px 10px 0;
+}
+
+#nav-sns-icons a {
+    color: var(--color-brown);
+    padding: 10px 5px;
+    text-align: right;
+}
+
+#nav-cta {
+    color: var(--color-red);
+}
