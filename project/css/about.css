@@ -3,21 +3,6 @@
  Class sectors
 ------------
 */
-.about-header {
-    background-color: var(--color-yellow);
-    width: 100%;
-    height: 100px;
-}
-
-.about-header h2 {
-    text-align: center;
-    padding: 30px 0;
-}
-
-.about-section {
-    padding: 20px 0;
-}
-
 .about-section h3 {
     text-align: center;
 }
@@ -32,16 +17,6 @@
 
 .about-para {
     padding: 10px 0;
-}
-
-
-/* 
-------------
- ID sectors
-------------
-*/
-#about-body {
-    background-color: var(--color-white);
 }
 
 

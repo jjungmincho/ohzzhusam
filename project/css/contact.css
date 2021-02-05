@@ -1,0 +1,164 @@
+/* 
+------------
+ Class sectors
+------------
+*/
+/* Responsive Images */
+.contact-image-container {
+    padding: 20px;
+}
+
+.contact-image-items {
+    padding: 5px;
+}
+
+.contact-image-items img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+/* Store hours */
+.contact-section h3 {
+    text-align: center;
+}
+
+.contact-table {
+    display: none;
+}
+
+.contact-store-hour-list {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-store-hour-list li {
+    line-height: 2;
+}
+
+/* Address - Map */
+.contact-map {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-map iframe {
+    width: 380px;
+    height: 250px;
+}
+
+/* Address - Form */
+.contact-form {
+    background-color: var(--color-light-yellow);
+    border: 1px solid var(--color-grey);
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact-section label {
+    color: var(--color-black);
+    font-size: 1.15em;
+    font-weight: 400;
+}
+
+.contact-section input {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0 15px;
+}
+
+.contact-section textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+}
+
+/* 
+------------
+ ID sectors
+------------
+*/
+/* Address - Form */
+#submit-btn {
+    background-color: var(--color-red);
+    width: 100px;
+    border-radius: 90px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    margin: auto;
+}
+
+#submit-btn input {
+    color: var(--color-white);
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    outline: none;
+}
+
+#submit-btn:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+}
+
+#submit-btn:active {
+    transform: scale(.85);
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+}
+
+/* 
+------------
+ Media Queries 
+------------
+*/
+@media screen and (min-width: 600px) {
+    .contact-image-container {
+        display: grid;
+        grid-template: 250px / repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .contact-store-hour-list {
+        display: none;
+    }
+
+    .contact-table {
+        display: flex;
+        justify-content: center;
+        padding: 20px 10px;
+    }
+    
+    .contact-table th, 
+    .contact-table td {
+        padding: 10px 5px;
+        border: 1px solid var(--color-brown);
+        text-align: left;
+    }
+    
+    .contact-table th {
+        font-weight: 700;
+        background-color: var(--color-yellow);
+    }
+    
+    .contact-table td {
+        background-color: var(--color-light-yellow);
+    }
+ 
+}
+
+@media screen and (min-width: 1200px) {
+
+    .contact-table th, 
+    .contact-table td {
+        padding: 10px 15px;
+    }
+
+}

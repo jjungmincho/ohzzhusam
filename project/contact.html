@@ -21,7 +21,8 @@
     <!--External CSS File-->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body id="contact-body">
+    <!-- Header -->
     <header class="main-header">
         <div class="top-nav">
             <div class="logo-container">
@@ -42,10 +43,123 @@
         </nav>
     </header>
 
+     <!-- Content -->
+    <div class="content-header">
+        <h2>Contact</h2>
+    </div>
+
     <div id="wrapper">
+        <section class="contact-section">
+
+            <div class="contact-image-container">
+                <div class="contact-image-items">
+                    <img src="images/outdoor05.jpg" alt="Outlook of Oh! Zzhusam Store">
+                </div>
+
+                <div class="contact-image-items">
+                    <img src="images/outdoor03.jpg" alt="Outlook of Oh! Zzhusam Store">
+                </div>
+                
+                <div class="contact-image-items">
+                    <img src="images/indoor01.jpg" alt="Oh! Zzhusam Store Indoor">
+                </div>
+                    
+                <div class="contact-image-items">
+                    <img src="images/indoor03.jpg" alt="Oh! Zzhusam Store Indoor">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contact-section">
+
+            <h3>Store Hours</h3>
+
+            <div class="contact-store-hour-list">
+                <ul>
+                    <li>Monday: 11:30am - 9pm</li>
+                    <li><em>Tuesday: Closed</em></li>
+                    <li>Wednesday: 11:30am - 9pm</li>
+                    <li>Thursday: 11:30am - 9pm</li>
+                    <li>Friday: 11:30am - 10pm</li>
+                    <li>Saturday: 11:30am - 10pm</li>
+                    <li>Sunday: 11:30am - 9pm</li>
+                </ul>
+            </div>
+
+            <table class="contact-table">
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+
+                <tr>
+                    <td>11:30am - 9pm</td>
+                    <td>Closed</td>
+                    <td>11:30am - 9pm</td>
+                    <td>11:30am - 9pm</td>
+                    <td>11:30am - 10pm</td>
+                    <td>11:30am - 10pm</td>
+                    <td>11:30am - 9pm</td>
+                </tr>
+            </table>
+
+        </section>
+
+        <section class="contact-section">
+
+            <h3>Address</h3>
+
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166587.24996035613!2d-122.94120395498845!3d49.277803557613886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548677c6218cf507%3A0x5eaf8667e36dfad2!2sOh*21%20Zzhu%20Sam%20Korean%20Restaurant!5e0!3m2!1sen!2sca!4v1612425271661!5m2!1sen!2sca" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <form action="scripts/processing_script.php"
+                method="post"
+                class="contact-form">
+
+                <div class="firstname">
+                    <label for="firstname">First Name:</label>
+                    <input type="text"
+                           name="firstname"
+                           id="firstname" 
+                           placeholder=" first name"
+                           required ="required" />
+                </div>
+               
+                <div class="lastname">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text"
+                           name="lastname"
+                           id="lastname" 
+                           placeholder=" last name"
+                           required ="required" />
+                </div>
+
+                <div class="comments">
+                    <p>Contact us for large orders or catering!</p>
+                    <textarea name="comments"
+                              placeholder=" Write a comment here..."
+                              id="comments"></textarea>
+                </div>
+            
+                <div id="submit-btn">
+                    <input type="submit"
+                           value="Submit" />
+                </div>
+               
+            </form>
+
+        </section>
 
     </div>
 
+    <!-- Footer -->
     <footer>
         <div class="primary-footer">
 
