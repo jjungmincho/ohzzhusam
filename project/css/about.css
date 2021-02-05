@@ -1,0 +1,83 @@
+p {
+    color: var(--color-black);
+}
+
+/* 
+------------
+ Class sectors
+------------
+*/
+.about-section {
+    padding: 20px 0;
+}
+
+.about-section h2,
+.about-section h3 {
+    text-align: center;
+}
+
+/* Responsive Images */
+.about-image-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-image-items {
+    padding: 5px;
+    width: 100%;
+}
+
+.about-image-container img {
+    width: 100%;
+}
+
+/* History */
+.about-history-para {
+    padding: 20px;
+}
+
+
+/* 
+------------
+ ID sectors
+------------
+*/
+/* Korean Dining Culture */
+#korean-dining-section {
+    background-image: url("images/group-dining.jpg");
+}
+
+
+/* 
+------------
+ Media Queries 
+------------
+*/
+@media screen and (min-width: 600px) {
+    .about-image-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-image-items {
+        padding: 0;
+    }
+
+    .about-image-container img {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+    }
+
+    /* History */
+    .about-history-para-container {
+        padding: 0 10%;
+    }
+
+    /* Korean Dining Culture */
+
+    
+}
