@@ -1,7 +1,3 @@
-p {
-    color: var(--color-black);
-}
-
 /* 
 ------------
  Class sectors
@@ -33,20 +29,36 @@ p {
     width: 100%;
 }
 
-/* History */
-.about-history-para {
+.about-para {
     padding: 20px;
 }
 
+.about-image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
 
 /* 
 ------------
  ID sectors
 ------------
 */
+#about-body {
+    background-color: var(--color-white);
+}
+
 /* Korean Dining Culture */
 #korean-dining-section {
-    background-image: url("images/group-dining.jpg");
+    width: 100%;
+    height: auto;
+}
+
+#korean-dining-section img {
+    width: 100%;
+    filter: blur(3px);
+    filter: brightness(0.25);
+    filter: opacity(50%);
 }
 
 
@@ -66,18 +78,22 @@ p {
         padding: 0;
     }
 
-    .about-image-container img {
-        object-fit: cover;
-        width: 100%;
-        height: 250px;
-    }
-
-    /* History */
-    .about-history-para-container {
+    .about-para-container {
         padding: 0 10%;
     }
+}
 
-    /* Korean Dining Culture */
-
-    
+@media screen and (min-width: 1200px) {
+    #korean-dining-section {
+        margin: 50px 0;
+    }
+    #about-culture-article {
+        width: 900px;
+        position: absolute;
+        left: 50%;
+        top: 220%;
+        transform: translate(-50%, -50%);
+        background-color: var(--color-light-yellow);
+        box-shadow: var(--box-shadow);
+    }
 }

@@ -9,6 +9,7 @@ footer div {
 footer div li,
 footer div p {
     padding: 5px;
+    color: var(--color-white);
 }
 
 footer .social-media-icon-container span i {
