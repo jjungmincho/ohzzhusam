@@ -161,6 +161,11 @@
 
 @media screen and (min-width: 1200px) {
 
+    .contact-image-container {
+        border: 5px dashed var(--color-brown);
+        padding: 10px;
+    }
+
     .contact-table th, 
     .contact-table td {
         padding: 10px 15px;

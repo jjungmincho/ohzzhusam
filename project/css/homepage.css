@@ -1,0 +1,47 @@
+.homepage-main {
+    padding: 10% 0;
+}
+
+.homepage-main h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Portfolio Items Layout - Cards */
+.cards-container {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 30px;
+    
+    /*
+    simple grid for 
+    one column stack
+        minmax(250px, 1fr)
+    min 250px width for each article
+    otherwise articles will stretch to fill available space 1fr
+    */
+    display: grid;
+    grid-gap: 30px;
+}
+
+.card-image {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(255,255,255, 0.8);
+}
+
+@media screen and (min-width: 600px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
