@@ -166,7 +166,8 @@ button {
     padding: 5% 0 10% 0;  
 }
 
-#about-body {
+#about-body,
+#contact-body { 
     background-color: var(--color-white);
 }
 

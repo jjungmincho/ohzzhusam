@@ -26,8 +26,49 @@
 ------------
 */
 @media screen and (min-width: 1200px) {
+    .about-section {
+        display: grid;
+        grid-template: 380px / repeat(4, 1fr);
+    }
+
    .about-section h3 {
     text-align: left;
     padding-left: 20px;
    }   
+
+   .about-article {
+       background-color: var(--color-light-yellow);
+       box-shadow: var(--box-shadow);
+       padding: 15px;
+       z-index: 1;
+   }
+
+   .image-1,
+   .image-3 {
+       grid-column-start: 1;
+       grid-column-end: span 3;
+   }
+
+   .article-1,
+   .article-3 {
+        grid-column-start: 2;
+        grid-column-end: span 3;
+   }
+
+   .image-2 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+   }
+
+   .article-2 {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-row-start: 2;
+        grid-row-end: span 2;
+   } 
+   
+   .about-image-container {
+       border: 5px dashed var(--color-brown);
+       padding: 10px;
+   }
 }
