@@ -3,41 +3,37 @@
  Class sectors
 ------------
 */
+.about-header {
+    background-color: var(--color-yellow);
+    width: 100%;
+    height: 100px;
+}
+
+.about-header h2 {
+    text-align: center;
+    padding: 30px 0;
+}
+
 .about-section {
     padding: 20px 0;
 }
 
-.about-section h2,
 .about-section h3 {
     text-align: center;
 }
 
-/* Responsive Images */
-.about-image-container {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.about-image-items {
-    padding: 5px;
-    width: 100%;
-}
-
 .about-image-container img {
     width: 100%;
+}
+
+.about-para-container {
+    padding: 0 20px;
 }
 
 .about-para {
-    padding: 20px;
+    padding: 10px 0;
 }
 
-.about-image-container img {
-    object-fit: cover;
-    width: 100%;
-    height: 250px;
-}
 
 /* 
 ------------
@@ -48,52 +44,15 @@
     background-color: var(--color-white);
 }
 
-/* Korean Dining Culture */
-#korean-dining-section {
-    width: 100%;
-    height: auto;
-}
-
-#korean-dining-section img {
-    width: 100%;
-    filter: blur(3px);
-    filter: brightness(0.25);
-    filter: opacity(50%);
-}
-
 
 /* 
 ------------
  Media Queries 
 ------------
 */
-@media screen and (min-width: 600px) {
-    .about-image-container {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about-image-items {
-        padding: 0;
-    }
-
-    .about-para-container {
-        padding: 0 10%;
-    }
-}
-
 @media screen and (min-width: 1200px) {
-    #korean-dining-section {
-        margin: 50px 0;
-    }
-    #about-culture-article {
-        width: 900px;
-        position: absolute;
-        left: 50%;
-        top: 220%;
-        transform: translate(-50%, -50%);
-        background-color: var(--color-light-yellow);
-        box-shadow: var(--box-shadow);
-    }
+   .about-section h3 {
+    text-align: left;
+    padding-left: 20px;
+   }   
 }
