@@ -6,6 +6,7 @@
 @import url("about.css");
 @import url("contact.css");
 @import url("homepage.css");
+@import url("menu.css");
 
 
 
@@ -21,6 +22,7 @@
   --color-yellow: #FFB938;
   --color-light-brown: #953026;
   --color-brown: #3A0706;
+  --color-green: #00AF33;
 
     /* shadow */
   --box-shadow: 1px 1px 2px rgb(70, 70, 70); 
@@ -168,7 +170,8 @@ button {
 }
 
 #about-body,
-#contact-body { 
+#contact-body,
+#menu-body {  
     background-color: var(--color-white);
 }
 
