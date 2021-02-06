@@ -1,7 +1,8 @@
 hr {
     width: 10%;
-    height: 2px;
-    background-color: var(--color-brown);
+    height: 3px;
+    background-color: var(--color-dark-brown);
+    margin: 10% auto;
 }
 
 /* 
@@ -10,6 +11,10 @@ hr {
 ------------
 */
 /* Date */
+.order-section {
+    padding: 20px; 
+}
+
 .order-date-article {
     display: flex;
     flex-direction: column;
@@ -82,6 +87,58 @@ hr {
     cursor: pointer;
 }
 
+/* Summary */
+.order-summary-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.order-summary-left-box span {
+    padding: 0 10px;
+}
+
+.order-summary-left-box {
+    padding: 10px 0;
+}
+
+.order-summary-left-box span {
+    font-size: 1.15rem;
+}
+
+.second, .third {
+    padding-left: 15%;
+}
+
+.order-summary-comments {
+    color: var(--color-grey);
+}
+
+.order-summary-edit,
+.order-summary-remove {
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+.order-summary-edit a {
+    color: var(--color-black);
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+
+.order-checkout-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+}
+
 
 
 /* 
@@ -128,11 +185,47 @@ hr {
 }
 
 /*order summary */
-#order-summary strong {
-    cursor: pointer;
+#order-dates a {
+    color: var(--color-red);
 }
 
+#order-summary-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+#order-summary-number {
+    background-color: var(--color-light-yellow);
+    padding: 10px;
+}
+
+#order-summary-menu-name {
+    margin: 0 10px; 
+}
+
+#order-short-form {
+    display: flex;
+    padding: 3%;
+    background: var(--color-light-yellow);
+}
+
+#order-short-form fieldset {
+    padding: 10px; 
+    font-size: 1.15rem;
+}
+
+#order-checkout-btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#order-checkout-cancel {
+    padding-right: 20px;
+}
 
 /* 
 ------------
@@ -145,6 +238,17 @@ hr {
     .order-section p {
         text-align: center;
     }
+        
+    .second, .third {
+        padding-left: 7%;
+    }
+
+    #order-short-form {
+        display: flex;
+        padding: 5% 13%;
+    }
+    
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -159,5 +263,6 @@ hr {
         grid-column-end: 3;
         justify-self: center;
     }
+
 
 }

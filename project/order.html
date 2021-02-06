@@ -51,7 +51,7 @@
 
     <div id="wrapper">
 
-        <article class="order-date-article">
+        <article class="order-date-article" id="order-first-section">
             <h3>Order Preparation Time</h3>
             <p>Average Takeout and Delivery times may be affected during peak hours of 5pm to 8pm.</p>
 
@@ -138,28 +138,105 @@
 
         <hr>
 
-        <section class="order-section" id="order-summary">
+        <section class="order-section" id="order-summary-section">
             <h3>Order Summary</h3>
-            <p><strong>Delivery</strong> for <strong>Today</strong> at <strong>8pm</strong></p>
+            <p id="order-dates"><a href="#order-date">Delivery</a> for <a href="#order-date">Today</a> at <a href="#order-date">8pm<a></p>
 
-            <article class="">
-                <div>
-                    <p>1</p>
-                    <p>Zzhusam</p>
-                    <p>$46.68</p>
+            <article class="order-summary-article">
+                <div class="order-summary-container" id="order-summary-main">
+                    <div class="order-summary-left-box">
+                        <span id="order-summary-number">1</span>
+                        <span id="order-summary-menu-name">Zzhusam</span>
+                    </div>
+                    <span>$46.68</span>
                 </div>
                 
-                <div>
-                    <span>Less spicy please.</span>
+                <div class="order-summary-container second">
+                    <span class="order-summary-comments">Less spicy please.</span>
                 </div>
 
-                <div>
-                    <span>Edit</span>
-                    <span>Remove</span>
+                <div class="order-summary-container third">
+                    <span id="order-summary-edit"><a href="menu.html">Edit</a></span>
+                    <span class="order-summary-remove">Remove</span>
                 </div>
             </article>
 
+            <article class="order-summary-article">
+                <div class="order-summary-container" id="order-summary-main">
+                    <div class="order-summary-left-box">
+                        <span id="order-summary-number">1</span>
+                        <span id="order-summary-menu-name">Spicy Chicken</span>
+                    </div>
+                    <span>$23.10</span>
+                </div>
+                
+                <div class="order-summary-container second">
+                    <span class="order-summary-comments">Less Spicy please.</span>
+                </div>
+
+                <div class="order-summary-container third">
+                    <span class="order-summary-edit"><a href="menu.html">Edit</a></span>
+                    <span class="order-summary-remove">Remove</span>
+                </div>
+            </article>
+
+            <article class="order-summary-article">
+                <div class="order-summary-container" id="order-summary-main">
+                    <div class="order-summary-left-box">
+                        <span id="order-summary-number">2</span>
+                        <span id="order-summary-menu-name">Corn Cheese</span>
+                    </div>
+                    <span>$12.00</span>
+                </div>
+
+                <div class="order-summary-container third">
+                    <span class="order-summary-edit"><a href="menu.html">Edit</a></span>
+                    <span class="order-summary-remove">Remove</span>
+                </div>
+            </article>
+
+            <form action="#"
+                  method="post"
+                  id="order-short-form">
+
+                <fieldset>
+                    <legend>Do you need accessories?</legend>
+                    <input 	type="checkbox" 
+                            id="no" 
+                            name="accessories"
+                            value="no" />	
+                    <label 	for="no">No</label>	
+            
+                    <input 	type="checkbox" 
+                            id="utensils" 
+                            name="accessories"
+                            value="utensils" />	
+                    <label 	for="utensils">Utensils</label>	
+                
+                    <input 	type="checkbox" 
+                            id="towels" 
+                            name="accessories"
+                            value="towels" />	
+                    <label 	for="towels">Towels</label>	
+                        
+                </fieldset>	
+                
+            </form>
+
+            <div class="order-checkout-container">
+                <span id="order-checkout-cancel">
+                    <a href="#order-first-section"><p>Cancel</p></a>
+                </span>
+
+                <button id="order-checkout-btn">
+                    <span>Checkout</span>
+                    <span>$81.78</span>
+                </button>
+            </div> 
         </section>
+
+        <hr>
+
 
     </div>
 

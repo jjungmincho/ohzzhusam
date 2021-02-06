@@ -181,14 +181,15 @@ button {
 #about-body,
 #contact-body,
 #menu-body,
-#order-body {  
+/* #order-body*/ { 
     background-color: var(--color-white);
 }
 
 /* button */
 #cta,
 #submit-btn,
-#search-btn {
+#search-btn,
+#order-checkout-btn {
     background-color: var(--color-red);
     color: var(--color-white);
     box-shadow: var(--box-shadow);
@@ -197,7 +198,8 @@ button {
 }
 
 #submit-btn input,
-#search-btn input {
+#search-btn input,
+#order-checkout-btn input {
     color: var(--color-white);
     border: none;
     background-color: transparent;
@@ -211,14 +213,16 @@ button {
 
 #cta:hover,
 #submit-btn:hover,
-#search-btn:hover {
+#search-btn:hover,
+#order-checkout-btn:hover {
     background-color: var(--color-yellow);
     color: var(--color-white);
 }
 
 #cta:active,
 #submit-btn:active,
-#search-btn:active {
+#search-btn:active,
+#order-checkout-btn:active {
     transform: var(--transform);
     background-color: var(--color-yellow);
     color: var(--color-white);
