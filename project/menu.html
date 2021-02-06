@@ -20,6 +20,7 @@
     <title>Menu</title>
     <!--External CSS File-->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script src="scripts/main.js" defer></script>
 </head>
 <body id="menu-body">
     <!--Header-->
@@ -65,7 +66,91 @@
 
                 <div class="menu-container">
                     <div class="menu-img-container">
-                        <img class="menu-image" src="images/appetizer.jpg" alt="Appetizer">
+                        <!-- Trigger/Open The Modal -->
+                        <img class="menu-image" id="myBtn" src="images/appetizer.jpg" alt="Appetizer">
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+
+                                <div class="modal-header">
+                                    <h3>Corn Cheese</h3>
+                                    <p>Torched Corn,tartar sauce and cheese</p>
+                                </div>
+    
+                                <div class="modal-body">
+                                    <img id="modal-img" src ="images/appetizer.jpg" alt="corn cheese">
+
+                                    <form action="https://bcit.ca"
+                                          method="post"
+                                          class="menu-order-form">
+                    
+                                    <fieldset class="prefix">
+                                        <legend>Size Choice:</legend>
+                                        <div class="prefix-size-container">
+                                            <span>
+                                                <input type="radio"
+                                                       id="large"
+                                                       name="prefix"
+                                                       value="large" />
+                                                <label for="large">Large</label>
+                                            </span>
+    
+                                            <span>$9.99</span>
+                                        </div>
+                                      
+                                        <div class="prefix-size-container">
+                                            <span>
+                                                <input type="radio"
+                                                       id="medium"
+                                                       name="prefix"
+                                                       value="medium" />
+                                                <label for="medium">Medium</label>
+                                            </span>
+    
+                                            <span>$7.99</span>
+                                        </div>
+                                        
+                                        <div class="prefix-size-container">
+                                            <span>
+                                                <input type="radio"
+                                                       id="small"
+                                                       name="prefix"
+                                                       value="small" />
+                                                <label for="small">Small</label>
+                                            </span>
+    
+                                            <span>$5.99</span>
+                                        </div>
+                
+                                        </fieldset>
+                    
+                                    <div class="modal-comments">
+                                        <p>List any special requests:</p>
+                                        <textarea name="modal-comments"
+                                                  placeholder=" eg. allergies, extra spicy..."
+                                                  id="modal-comments"></textarea>
+                                    </div>
+
+                                    <fieldset class="quantity">
+                                        <label for="quantity">Quantity (1 - 10):</label>
+                                        <input type="number" id="quantity" name="quantity" min="1" max="10">
+                                       
+                                    </fieldset>
+                                
+                                    <div id="modal-submit-btn">
+                                        <input type="submit"
+                                               value="Add to Cart" />
+                                    </div>
+                                
+                                    </form>
+                                </div>
+    
+                            </div>
+                            
+                        </div>
                     </div>
 
                     <div class="menu-info-container">

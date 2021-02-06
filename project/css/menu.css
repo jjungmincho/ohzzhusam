@@ -61,6 +61,7 @@
     padding: 3px;
 }
 
+
 /* 
 ------------
  ID sectors
@@ -82,6 +83,130 @@
 #sold-out-img {
     cursor: not-allowed;
 }
+
+
+/* 
+------------
+Modal 
+------------
+*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 800px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: var(--color-red);
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0 5px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: var(--color-yellow);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.modal-header p {
+    color: var(--color-grey);
+    padding-bottom: 20px;
+}
+
+#modal-img {
+    width: 100%;
+}
+
+/* Modal - Form */
+.menu-order-form {
+    padding: 20px 0;
+}
+
+.prefix {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+}
+
+.prefix-size-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    margin-bottom: 10px;
+}
+
+.quantity label {
+    padding-bottom: 5px;
+}
+
+
+.modal-comments {
+    padding-bottom: 8px;
+}
+
+#modal-comments {
+    width: 100%;
+    height: 100px;
+}
+
+#modal-submit-btn {
+    background-color: var(--color-red);
+    width: 300px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+}
+
+#modal-submit-btn input {
+    color: var(--color-white);
+    border: none;
+    background-color: transparent;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    outline: none;
+}
+
+#modal-submit-btn:hover {
+    color: var(--color-yellow);
+}
+
+#modal-submit-btn:active {
+    transform: scale(.85);
+}
+
+
 
 /* 
 ------------
@@ -121,3 +246,6 @@
     }
 
 }
+
+
+
