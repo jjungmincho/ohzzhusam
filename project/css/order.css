@@ -119,13 +119,12 @@ hr {
     color: var(--color-grey);
 }
 
-.order-summary-edit,
 .order-summary-remove {
     padding-right: 5px;
     margin-right: 5px;
 }
 
-.order-summary-edit a {
+.order-summary-link {
     color: var(--color-black);
     font-weight: 300;
     font-size: 0.95rem;
@@ -239,7 +238,7 @@ hr {
         text-align: center;
     }
         
-    .second, .third {
+    .first, .second, .third {
         padding-left: 7%;
     }
 
