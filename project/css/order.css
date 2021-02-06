@@ -1,0 +1,163 @@
+hr {
+    width: 10%;
+    height: 2px;
+    background-color: var(--color-brown);
+}
+
+/* 
+------------
+ Class Selectors
+------------
+*/
+/* Date */
+.order-date-article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.order-date-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.order-date-container label {
+    padding-bottom: 5px;
+}
+
+.order-date-container input {
+    cursor: pointer;
+}
+
+/* Delivery */
+.order-delivery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.order-delivery-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-red);
+    border: 1px solid var(--color-brown);
+    padding: 10px 30px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.order-delivery-btn i, 
+.order-delivery-btn {
+    color: var(--color-white);
+}
+
+.order-delivery-btn i {
+    padding-right: 8px;
+}
+
+.order-delivery-btn:hover {
+    background-color: var(--color-yellow);
+}
+
+.order-delivery-btn:active {
+    transform: var(--transform);
+}
+
+.order-delivery-search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-delivery-search-container span {
+    padding: 0 20px; 
+    cursor: pointer;
+}
+
+
+
+/* 
+------------
+ Id Selectors
+------------
+*/
+#order-date {
+    padding: 10px;
+}
+
+/* Form */
+#order-delivery-form {
+    background-color: var(--color-light-yellow);
+    padding: 20px 10px;
+    margin-top: 20px;
+}
+
+#order-delivery-form label {
+    color: var(--color-black);
+    font-size: 1.15em;
+    font-weight: 400;
+}
+
+#order-delivery-form input {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0 15px;
+}
+
+#order-delivery-form textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+}
+
+#search-btn {
+    width: 100%;
+    max-width: 300px;
+}
+
+#delivery-active {
+    background-color: var(--color-yellow);
+}
+
+/*order summary */
+#order-summary strong {
+    cursor: pointer;
+}
+
+
+
+/* 
+------------
+ Media Queries 
+------------
+*/
+@media screen and (min-width: 600px) {
+    .order-date-article,
+    .order-section h3, 
+    .order-section p {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #order-delivery-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .order-delivery-search-container {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: center;
+    }
+
+}

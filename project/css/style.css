@@ -7,12 +7,13 @@
 @import url("contact.css");
 @import url("homepage.css");
 @import url("menu.css");
+@import url("order.css");
 
 
 
 /* Global Variables */
 :root {
-    /* color */
+  /* color */
   --color-dark-black:#000;
   --color-black:#090909;
   --color-red: #FF0033;
@@ -26,8 +27,11 @@
   --color-dark-brown: #0c0804;
   --color-green: #00AF33;
 
-    /* shadow */
+  /* shadow */
   --box-shadow: 1px 1px 2px rgb(70, 70, 70); 
+
+  /* button + cta transform */
+  --transform: scale(.85);
 }
 
 
@@ -176,7 +180,47 @@ button {
 
 #about-body,
 #contact-body,
-#menu-body {  
+#menu-body,
+#order-body {  
     background-color: var(--color-white);
+}
+
+/* button */
+#cta,
+#submit-btn,
+#search-btn {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+
+}
+
+#submit-btn input,
+#search-btn input {
+    color: var(--color-white);
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    outline: none;
+}
+
+#cta:hover,
+#submit-btn:hover,
+#search-btn:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+}
+
+#cta:active,
+#submit-btn:active,
+#search-btn:active {
+    transform: var(--transform);
+    background-color: var(--color-yellow);
+    color: var(--color-white);
 }
 

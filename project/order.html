@@ -22,7 +22,7 @@
     <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body id="order-body">
     <!-- Header -->
     <header class="main-header">
         <div class="top-nav">
@@ -48,7 +48,118 @@
     <div class="content-header">
         <h2>Order</h2>
     </div>
+
     <div id="wrapper">
+
+        <article class="order-date-article">
+            <h3>Order Preparation Time</h3>
+            <p>Average Takeout and Delivery times may be affected during peak hours of 5pm to 8pm.</p>
+
+            <div class="order-date-container">
+                <label for="order-date">Choose a date and time:</label>
+                <input type="date" 
+                       id="order-date"
+                       name="order-date"
+                       value="2021-02-06"
+                       min="2021-02-06"
+                       max="2031-12-31">
+            </div>
+          
+        </article>
+
+        <section class="order-section">
+            <div class="order-delivery-container">
+                <button class="order-delivery-btn">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                    Take Out
+                </button>
+                
+                <!--delivery button is activated-->
+                <button class="order-delivery-btn" id="delivery-active">
+                    <i class="fas fa-car fa-lg"></i>
+                    Delivery
+                </button>
+
+            </div>
+
+            <form action="#"
+                  method="post"
+                  id="order-delivery-form">
+          
+                <div class="address">
+                    <label for="address">Address:</label>
+                    <input type="text"
+                            name="address"
+                            id="firstname" 
+                            placeholder=" Address"
+                            required ="required" />
+                </div>
+
+                <div class="city">
+                    <label for="city">City:</label>
+                    <input type="text"
+                            name="city"
+                            id="firstname" 
+                            placeholder=" City"
+                            required ="required" />
+                </div>
+
+                <div class="suit">
+                    <label for="suit"># Suit:</label>
+                    <input type="text"
+                            name="suit"
+                            id="firstname" 
+                            placeholder=" # Suit"
+                            required ="required" />
+                </div>
+
+                <div class="postal-code">
+                    <label for="postal-code">Postal Code:</label>
+                    <input type="text"
+                            name="postal-code"
+                            id="firstname" 
+                            placeholder=" Postal Code"
+                            required ="required" />
+                </div>
+
+                <div class="order-delivery-search-container">
+                    <span id="order-delivery-cancel">
+                        <a href="menu.html"><p>Cancel</p></a>
+                    </span>
+    
+                    <!--This submit will direct to the order summary section if JavaScript & php worked...-->
+                    <div id="search-btn">
+                        <input type="submit"
+                               value="Search" />
+                    
+                </div>
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="order-section" id="order-summary">
+            <h3>Order Summary</h3>
+            <p><strong>Delivery</strong> for <strong>Today</strong> at <strong>8pm</strong></p>
+
+            <article class="">
+                <div>
+                    <p>1</p>
+                    <p>Zzhusam</p>
+                    <p>$46.68</p>
+                </div>
+                
+                <div>
+                    <span>Less spicy please.</span>
+                </div>
+
+                <div>
+                    <span>Edit</span>
+                    <span>Remove</span>
+                </div>
+            </article>
+
+        </section>
 
     </div>
 

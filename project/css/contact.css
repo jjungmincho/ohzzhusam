@@ -88,35 +88,8 @@
 */
 /* Address - Form */
 #submit-btn {
-    background-color: var(--color-red);
     width: 200px;
-    border-radius: 90px;
-    box-shadow: var(--box-shadow);
-    cursor: pointer;
     margin: auto;
-}
-
-#submit-btn input {
-    color: var(--color-white);
-    border: none;
-    background-color: transparent;
-    padding: 10px;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 0;
-    outline: none;
-}
-
-#submit-btn:hover {
-    background-color: var(--color-yellow);
-    color: var(--color-white);
-}
-
-#submit-btn:active {
-    transform: scale(.85);
-    background-color: var(--color-yellow);
-    color: var(--color-white);
 }
 
 /* 
