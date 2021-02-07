@@ -51,6 +51,7 @@
 
     <div id="wrapper">
 
+        <!--Order Date-->
         <article class="order-date-article" id="order-first-section">
             <h3>Order Preparation Time</h3>
             <p>Average Takeout and Delivery times may be affected during peak hours of 5pm to 8pm.</p>
@@ -67,6 +68,7 @@
           
         </article>
 
+        <!--Order Delivery-->
         <section class="order-section">
             <div class="order-delivery-container">
                 <button class="order-delivery-btn">
@@ -84,7 +86,7 @@
 
             <form action="#"
                   method="post"
-                  id="order-delivery-form">
+                  id="order-form">
           
                 <div class="address">
                     <label for="address">Address:</label>
@@ -123,21 +125,22 @@
                 </div>
 
                 <div class="order-delivery-search-container">
-                    <span id="order-delivery-cancel">
-                        <a href="menu.html"><p>Cancel</p></a>
+                    <span id="order-cancel">
+                        <a href="menu.html">Cancel</a>
                     </span>
     
                     <!--This submit will direct to the order summary section if JavaScript & php worked...-->
                     <div id="search-btn">
                         <input type="submit"
                                value="Search" />
-                    
+                    </div>
                 </div>
             </form>
         </section>
 
         <hr>
 
+        <!--Order Summary-->
         <section class="order-section" id="order-summary-section">
             <h3>Order Summary</h3>
             <p id="order-dates"><a href="#order-date">Delivery</a> for <a href="#order-date">Today</a> at <a href="#order-date">8pm<a></p>
@@ -227,20 +230,243 @@
                 
             </form>
 
-            <div class="order-checkout-container">
-                <span id="order-checkout-cancel">
-                    <a href="#order-first-section"><p>Cancel</p></a>
+            <div class="order-container">
+                <span id="order-cancel">
+                    <a href="#order-first-section">Cancel</a>
                 </span>
 
                 <button id="order-checkout-btn">
-                    <span>Checkout</span>
-                    <span>$81.78</span>
+                    <a href="#submit-order-section">
+                        <span>Checkout</span>
+                        <span>$81.78</span>
+                    </a>
                 </button>
             </div> 
         </section>
 
         <hr>
 
+        <!--Submit Order-->
+        <section class="order-section" id="submit-order-section">
+            <h3>Submit Order</h3>
+            <p id="order-dates"><a href="#order-date">Delivery</a> for <a href="#order-date">Today</a> at <a href="#order-date">8pm<a></p>
+
+            <article class="order-article">
+                <h4>Contact Info</h4>
+
+                <form action="#"
+                  method="post"
+                  id="order-form">
+
+                    <div class="firstname">
+                        <label for="firstname">First Name:</label>
+                        <input type="text"
+                            name="firstname"
+                            id="firstname" 
+                            placeholder=" first name"
+                            required ="required" />
+                    </div>
+                
+                    <div class="lastname">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text"
+                            name="lastname"
+                            id="lastname" 
+                            placeholder=" last name"
+                            required ="required" />
+                    </div>
+
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="text"
+                            name="email"
+                            id="email" 
+                            placeholder=" email"
+                            required ="required" />
+                    </div>
+                    
+                    <div class="phonenumber">
+                        <label for="phonenumber">Phone Number:</label>
+                        <input type="text"
+                            name="phonenumber"
+                            id="phonenumber" 
+                            placeholder=" phone number"
+                            required ="required" />
+                    </div>
+                </form>
+
+            </article>
+
+            <article class="order-article">
+                <h4>Payment Method</h4>
+
+                <form action="#"
+                  method="post"
+                  id="order-form">
+
+                    <div class="cardnumber">
+                        <label for="cardnnumber">Card Number:</label>
+                        <input type="text"
+                            name="cardnnumber"
+                            id="cardnnumber" 
+                            placeholder=" card number"
+                            required ="required" />
+                    </div>
+                
+                    <div class="payment-date">
+                        <label for="payment-date">Date:</label>
+                        <div class="payment-select-container">
+                            <select>
+                                <option value="01">January</option>
+                                <option value="02">February </option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                            <select>
+                                <option value="16"> 2021</option>
+                                <option value="17"> 2022</option>
+                                <option value="18"> 2023</option>
+                                <option value="19"> 2024</option>
+                                <option value="20"> 2025</option>
+                                <option value="21"> 2026</option>
+                            </select>
+                        </div>
+                       
+                    </div>
+
+                    <div class="cvv">
+                        <label for="cvv">CVV:</label>
+                        <input type="text"
+                            name="cvv"
+                            id="cvv" 
+                            placeholder=" cvv"
+                            required ="required" />
+                    </div>
+                    
+                    <div class="zip">
+                        <label for="zip">Zip:</label>
+                        <input type="zip"
+                            name="zip"
+                            id="zip" 
+                            placeholder=" zip"
+                            required ="required" />
+                    </div>
+                </form>
+
+            </article>
+
+            <article class="order-article">
+                <h4>Tip</h4>
+
+                <form action="#"
+                  method="post"
+                  id="order-tip-form">
+                
+                    <fieldset class="prefix">
+                        <legend>Percentage:</legend>
+
+                        <div class="prefix-container">
+                            <span>
+                                <input type="radio"
+                                        id="twenty"
+                                        name="prefix"
+                                        value="twenty" />
+                                <label for="twenty">20%</label>
+                            </span>
+                        
+                            <span>
+                                <input type="radio"
+                                        id="fifteen"
+                                        name="prefix"
+                                        value="fifteen" />
+                                <label for="fifteen">15%</label>
+                            </span>
+                        
+                            <span>
+                                <input type="radio"
+                                        id="twelve"
+                                        name="prefix"
+                                        value="twelve" />
+                                <label for="twelve">12%</label>
+                            </span>
+                        </div>
+                        
+                    </fieldset>
+
+                    <div class="amount">
+                        <label for="amount">Custom Amount:</label>
+                        <input type="text"
+                            name="amount"
+                            id="amount" 
+                            placeholder=" $custom amount"
+                            required ="required" />
+                    </div>
+    
+            </article>
+        </section>
+        
+        <section class="order-section" id="total-amount-section">
+            <article class="total-amount-article">
+                <div class="order-total-amount-container">
+                    <h5>Subtotal</h5>
+                    <p>$81.78</p>
+                </div>
+                
+                <div class="order-total-amount-container">
+                    <h5>GST</h5>
+                    <p>$3.00</p>
+                </div>
+    
+                <div class="order-total-amount-container">
+                    <h5>Tip</h5>
+                    <p>$20.00</p>
+                </div>
+    
+                
+                <div class="order-total-amount-container">
+                    <h5>Total</h5>
+                    <p>$104.78</p>
+                </div>
+            </article>
+
+            <form action="#"
+                  method="post"
+                  id="order-agree-form">
+
+              <fieldset class="order-agree-fieldset">
+                  
+                  <input  type="checkbox" 
+                          id="check" 
+                          name="agree"
+                          value="check"
+                          required="checked" />	
+                  <label  for="check">Agree on verified orders before precess.</label>	
+                      
+              </fieldset>	
+            </form>
+
+            <div class="order-container">
+                <div id="order-cancel">
+                    <a href="#order-first-section">Cancel</a>
+                </div>
+
+                <button id="order-submit-btn">
+                    <a href="#review-receipt-section">
+                        <span>Checkout</span>
+                    </a>
+                </button>
+            </div> 
+            </div> 
+
+        </section>
 
     </div>
 

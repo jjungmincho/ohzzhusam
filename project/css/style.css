@@ -114,7 +114,7 @@ h6 {
     font-size: 1.15rem;
 }
 
-p, li, em {
+p, li, em, label, legend {
     font-weight: 400;
     font-size: 1.15rem;
 }
@@ -141,6 +141,7 @@ a {
 button {
     font-weight: 900;
     font-size: 1.15rem;
+    text-transform: uppercase;
 }
 
 
@@ -181,7 +182,7 @@ button {
 #about-body,
 #contact-body,
 #menu-body,
-/* #order-body*/ { 
+#order-body { 
     background-color: var(--color-white);
 }
 
@@ -189,17 +190,16 @@ button {
 #cta,
 #submit-btn,
 #search-btn,
-#order-checkout-btn {
+#order-checkout-btn,
+#order-submit-btn {
     background-color: var(--color-red);
     color: var(--color-white);
     box-shadow: var(--box-shadow);
     cursor: pointer;
-
 }
 
 #submit-btn input,
-#search-btn input,
-#order-checkout-btn input {
+#search-btn input {
     color: var(--color-white);
     border: none;
     background-color: transparent;
@@ -214,7 +214,8 @@ button {
 #cta:hover,
 #submit-btn:hover,
 #search-btn:hover,
-#order-checkout-btn:hover {
+#order-checkout-btn:hover,
+#order-submit-btn:hover {
     background-color: var(--color-yellow);
     color: var(--color-white);
 }
@@ -222,7 +223,8 @@ button {
 #cta:active,
 #submit-btn:active,
 #search-btn:active,
-#order-checkout-btn:active {
+#order-checkout-btn:active,
+#order-submit-btn:active {
     transform: var(--transform);
     background-color: var(--color-yellow);
     color: var(--color-white);

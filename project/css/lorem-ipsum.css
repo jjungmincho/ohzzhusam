@@ -43,9 +43,6 @@ blockquote {
     background-color: var(--color-brown);
 }
 
-.data td {
-    background-color: var(--color-light-brown);
-}
 
 /* Customize bullet points */
 .lorem-unordered-list ul,
@@ -80,6 +77,21 @@ blockquote {
 #strong {
     font-weight: 900;
 }
+
+/* Customize table */
+#data-line-2 {
+    background-color: var( --color-red);
+}
+
+#data-line-3 {
+    background-color: var( --color-yellow);
+}
+
+#data-line-4 {
+    background-color: var( --color-green);
+}
+
+
 
 /* Links pseudoclassed with hover effects */
 #external-ext {
