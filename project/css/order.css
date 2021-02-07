@@ -179,6 +179,73 @@ hr {
     text-align: center;
 }
 
+.order-container button {
+    width: 100%;
+    max-width: 150px;
+    padding: 10px;
+    font-weight: 700;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+
+.order-container button:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+}
+
+.order-container button:active {
+    transform: var(--transform);
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+}
+
+.order-container button a {
+    color: var(--color-white);
+}
+
+
+/* Review receipt */
+.order-submit-header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--color-light-brown);
+}
+
+.order-submit-header-container h4 {
+    border-bottom: none;
+    margin-bottom: 5px;
+}
+
+.order-submit-para-container {
+    padding-top: 20px;
+}
+
+.order-submit-header-container a {
+    color: var(--color-black);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.order-submit-ul {
+    line-height: 1.5;
+}
+
+.order-submit-ul strong {
+    color: var(--color-black);
+    font-weight: 900;
+}
+
+.order-submit-container {
+    padding: 20px 0;
+}
+
+.modal-body a {
+    color: var(--color-red);
+}
+
 
 /* 
 ------------
@@ -287,16 +354,11 @@ hr {
     color: var(--color-grey);
 }
 
-#order-submit-btn {
-    width: 100%;
-    max-width: 150px;
-    padding: 10px;
-    font-weight: 700;
+/* Review Receipt */
+#order-submit-para-subcontainer {
+    padding-top: 0;
 }
 
-#order-submit-btn a {
-    color: var(--color-white);
-}
 
 
 /* 
@@ -314,12 +376,6 @@ hr {
     .first, .second, .third {
         padding-left: 7%;
     }
-
-    #order-short-form {
-        display: flex;
-        padding: 5% 13%;
-    }
-    
     .order-total-amount-container {
         display: flex;
         flex-direction: row;
@@ -329,8 +385,31 @@ hr {
         max-width: 300px;
         margin-left: auto;
     }
-    
 
+    /* review grid */
+    .review-receipt-container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+            "one  four"
+            "two  four"
+            "three ."
+    }
+
+    .one {
+        grid-column-start: 1;
+    }
+
+    #review-total-amount {
+        max-width: 600px;
+    }
+
+
+    #order-short-form {
+        display: flex;
+        padding: 5% 13%;
+    }
+    
 }
 
 @media screen and (min-width: 1200px) {
@@ -351,5 +430,20 @@ hr {
         grid-template-columns: repeat(2, 1fr);
     }
 
+}
+
+@media print {
+    header, 
+    footer, 
+    hr,
+    .content-header,
+    #order-date-section,
+    #order-delivery-section,
+    #order-summary-section,
+    #submit-order-section,
+    #total-amount-section,
+    .order-container {
+        display: none;
+    }
 
 }

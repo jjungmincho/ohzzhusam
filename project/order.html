@@ -20,6 +20,7 @@
     <title>Order</title>
     <!--External CSS File-->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body id="order-body">
@@ -52,7 +53,7 @@
     <div id="wrapper">
 
         <!--Section 01: Order Date-->
-        <article class="order-date-article" id="order-first-section">
+        <article class="order-date-article" id="order-date-section">
             <h3>Order Preparation Time</h3>
             <p>Average Takeout and Delivery times may be affected during peak hours of 5pm to 8pm.</p>
 
@@ -69,7 +70,7 @@
         </article>
 
         <!--Section 02: Order Delivery-->
-        <section class="order-section">
+        <section class="order-section" id="order-delivery-section">
             <div class="order-delivery-container">
                 <button class="order-delivery-btn">
                     <i class="fas fa-shopping-cart fa-lg"></i>
@@ -232,7 +233,7 @@
 
             <div class="order-container">
                 <span id="order-cancel">
-                    <a href="#order-first-section">Cancel</a>
+                    <a href="#order-date-section">Cancel</a>
                 </span>
 
                 <button id="order-checkout-btn">
@@ -413,27 +414,28 @@
             </article>
         </section>
         
-        <article class="order-section" id="total-amount-section">
+        <!--Section 05: Total Amount-->
+        <section class="order-section" id="total-amount-section">
             <article class="total-amount-article">
                 <div class="order-total-amount-container">
                     <h5>Subtotal</h5>
-                    <p>$81.78</p>
+                    <p>$00.00</p>
                 </div>
                 
                 <div class="order-total-amount-container">
                     <h5>GST</h5>
-                    <p>$3.00</p>
+                    <p>$00.00</p>
                 </div>
     
                 <div class="order-total-amount-container">
                     <h5>Tip</h5>
-                    <p>$20.00</p>
+                    <p>$00.00</p>
                 </div>
     
                 
                 <div class="order-total-amount-container">
                     <h5>Total</h5>
-                    <p>$104.78</p>
+                    <p>$00.00</p>
                 </div>
             </article>
 
@@ -455,22 +457,222 @@
 
             <div class="order-container">
                 <div id="order-cancel">
-                    <a href="#order-first-section">Cancel</a>
+                    <a href="#order-date-section">Cancel</a>
                 </div>
 
                 <button id="order-submit-btn">
                     <a href="#review-receipt-section">Checkout</a>
                 </button>
             </div> 
-        </article>
+        </section>
 
         <hr>
 
+        <!--Section 06: Review Receipt-->
         <section class="order-section" id="review-receipt-section">
             <h3>Submit Order</h3>
             <p id="order-dates"><a href="#order-date">Delivery</a> for <a href="#order-date">Today</a> at <a href="#order-date">8pm<a></p>
-                
+            
+            <div class="review-receipt-container">
+                <!--Article 01: Address-->
+                <article class="order-article one">
+                    <div class="order-submit-header-container">
+                        <h4>Address</h4>
+                        <span><a href="#order-delievery-section">Edit</a></span>
+                    </div>
+                    
+                    <div class="order-submit-para-container">
+                        <ul class="order-submit-ul">
+                            <li><strong>Address:</strong> 3700 Willingdon Ave</li>
+                            <li><strong>City:</strong> Burnaby</li>
+                            <li><strong>#Suit:</strong> #123</li>
+                            <li><strong>Postal Code:</strong> V5G 3H2</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!--Article 02: Order Summary-->
+                <article class="order-article two">
+                    <div class="order-submit-header-container">
+                        <h4>Order Summary</h4>
+                        <span><a href="#order-summary-section">Edit</a></span>
+                    </div>
+                    
+                    <article class="order-summary-article">
+                        <div class="order-summary-container" id="order-summary-main">
+                            <div class="order-summary-left-box">
+                                <span id="order-summary-number">1</span>
+                                <span id="order-summary-menu-name">Zzhusam</span>
+                            </div>
+                            <span>$46.68</span>
+                        </div>
+                        
+                        <div class="order-summary-container second">
+                            <span class="order-summary-comments">Less spicy please.</span>
+                        </div>
+        
+                        <div class="order-summary-container third">
+                            <span class="order-summary-edit"><a class="order-summary-link" 
+                            href="menu.html">Edit</a></span>
+                            <span class="order-summary-remove">Remove</span>
+                        </div>
+                    </article>
+        
+                    <article class="order-summary-article">
+                        <div class="order-summary-container" id="order-summary-main">
+                            <div class="order-summary-left-box">
+                                <span id="order-summary-number">1</span>
+                                <span id="order-summary-menu-name">Spicy Chicken</span>
+                            </div>
+                            <span>$23.10</span>
+                        </div>
+                        
+                        <div class="order-summary-container second">
+                            <span class="order-summary-comments">Less Spicy please.</span>
+                        </div>
+        
+                        <div class="order-summary-container third">
+                            <span class="order-summary-edit"><a class="order-summary-link"
+                            href="menu.html">Edit</a></span>
+                            <span class="order-summary-remove">Remove</span>
+                        </div>
+                    </article>
+        
+                    <article class="order-summary-article">
+                        <div class="order-summary-container" id="order-summary-main">
+                            <div class="order-summary-left-box">
+                                <span id="order-summary-number">2</span>
+                                <span id="order-summary-menu-name">Corn Cheese</span>
+                            </div>
+                            <span>$12.00</span>
+                        </div>
+        
+                        <div class="order-summary-container third">
+                            <span class="order-summary-edit"><a 
+                            class="order-summary-link"
+                            href="menu.html">Edit</a></span>
+                            <span class="order-summary-remove">Remove</span>
+                        </div>
+                    </article>
+                </article>
+            
+                <!--Article 03: Submit Order-->
+                <article class="order-article three">
+                    <div class="order-submit-header-container">
+                        <h4>Submit Order</h4>
+                        <span><a href="#submit-order-section">Edit</a></span>
+                    </div>
+
+                    <div class="order-submit-container">
+                        <h5>Submit Order</h5>
+
+                        <div class="order-submit-para-container" id="order-submit-para-subcontainer">
+                            <ul class="order-submit-ul">
+                                <li><strong>First Name:</strong> Jessica</li>
+                                <li><strong>Last Name:</strong> Cho</li>
+                                <li><strong>Email:</strong> abc@gmail.com</li>
+                                <li><strong>Phone Number:</strong> (778) 123 - 456</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="order-submit-container">
+                        <h5>Payment Method</h5>
+
+                        <div class="order-submit-para-container" id="order-submit-para-subcontainer">
+                            <ul class="order-submit-ul">
+                                <li><strong>Card Number:</strong> 1234 1111 2222 3333</li>
+                                <li><strong>Date:</strong> February 2023</li>
+                                <li><strong>CVV:</strong> 777</li>
+                                <li><strong>Zip:</strong> V5G 3H2</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="order-submit-container">
+                        <h5>Tip</h5>
+
+                        <div class="order-submit-para-container" id="order-submit-para-subcontainer">
+                            <ul class="order-submit-ul">
+                                <li><strong>Custom Amount:</strong> $20.00</li>
+                            </ul>
+                        </div>
+                    </div>                    
+                </article>
+
+                <!--Article 04: Total Amount-->
+                <aside id="total-amount-section four">
+                    <article class="total-amount-article">
+                        <div class="order-total-amount-container"         id="review-total-amount">
+                            <h5>Subtotal</h5>
+                            <p>$81.78</p>
+                        </div>
+                        
+                        <div class="order-total-amount-container"         id="review-total-amount">
+                            <h5>GST</h5>
+                            <p>$3.00</p>
+                        </div>
+            
+                        <div class="order-total-amount-container"         id="review-total-amount">
+                            <h5>Tip</h5>
+                            <p>$20.00</p>
+                        </div>
+            
+                        
+                        <div class="order-total-amount-container"         id="review-total-amount">
+                            <h5>Total</h5>
+                            <p>$104.78</p>
+                        </div>
+                    </article>
+        
+                    <form action="#"
+                        method="post"
+                        id="order-agree-form">
+        
+                    <fieldset class="order-agree-fieldset">
+                        
+                        <input  type="checkbox" 
+                                id="check" 
+                                name="agree"
+                                value="check"
+                                checked />	
+                        <label  for="check">Agree on verified orders before precess.</label>	
+                            
+                    </fieldset>	
+                    </form>
+        
+                    <div class="order-container">
+                        <div id="order-cancel">
+                            <a href="#order-date-section">Cancel</a>
+                        </div>
+        
+                        <button id="myBtn">
+                            <a href="#review-receipt-section">Confirm</a>
+                        </button>
+                    </div> 
+                </aside>
+
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+                            
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+
+                        <div class="modal-body">
+                            <h3>Thank you for ordering!</h3>
+                            <p>We just sent your order receipt to your email.</p>
+                            <p>If you like to print, click <a href="images/print.pdf" class="print-reciept">Print Receipt</a>!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+           
         </section>
+
+        
+
 
     </div>
 
