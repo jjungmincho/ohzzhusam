@@ -1,7 +1,7 @@
 hr {
-    width: 10%;
-    height: 3px;
-    background-color: var(--color-dark-brown);
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-grey);
     margin: 10% auto;
 }
 
@@ -263,6 +263,10 @@ hr {
     justify-content: space-between;
 }
 
+#order-checkout-btn span {
+    font-weight: 700;
+}
+
 #order-cancel {
     padding-right: 20px;
 }
@@ -287,6 +291,7 @@ hr {
     width: 100%;
     max-width: 150px;
     padding: 10px;
+    font-weight: 700;
 }
 
 #order-submit-btn a {
