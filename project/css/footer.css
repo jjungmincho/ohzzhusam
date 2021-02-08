@@ -21,6 +21,9 @@ footer .logo-octopus-img {
     width: 80px;
 }
 
+footer .iframe {
+    display: none;
+}
 
 /* 
 ------------
@@ -106,6 +109,12 @@ footer .logo-octopus-img {
     .map {
         display: block;
         padding-top: 0;
+    }
+
+    .map iframe {
+        width: 350px;
+        height: 150px;
+        border: 0;
     }
 
     .social-media-icons {

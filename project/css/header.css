@@ -37,10 +37,6 @@ header {
     color: var(--color-red);
 }
 
-.fb_iframe_widget {
-    display: none;
-}
-
 .nav-li,
 .fb-page,
 #cta {
