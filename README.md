@@ -1,4 +1,4 @@
-# comp1850-final-project
+# ohzzhusam
 I created the online order website using HTML and CSS as the final project of Intro to Web 1850 course at BCIT
 
 # Note
