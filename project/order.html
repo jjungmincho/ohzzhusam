@@ -72,7 +72,7 @@
         </article>
 
         <!--Section 02: Order Delivery-->
-        <section class="order-section" id="order-delivery-section">
+        <div class="order-section" id="order-delivery-section">
             <div class="order-delivery-container">
                 <button class="order-delivery-btn">
                     <i class="fas fa-shopping-cart fa-lg"></i>
@@ -89,13 +89,13 @@
 
             <form action="#"
                   method="post"
-                  id="order-form">
+                  id="order-delivery-form">
           
                 <div class="address">
                     <label for="address">Address:</label>
                     <input type="text"
                             name="address"
-                            id="firstname" 
+                            id="address" 
                             placeholder=" Address"
                             required ="required" />
                 </div>
@@ -104,7 +104,7 @@
                     <label for="city">City:</label>
                     <input type="text"
                             name="city"
-                            id="firstname" 
+                            id="city" 
                             placeholder=" City"
                             required ="required" />
                 </div>
@@ -113,7 +113,7 @@
                     <label for="suit"># Suit:</label>
                     <input type="text"
                             name="suit"
-                            id="firstname" 
+                            id="suit" 
                             placeholder=" # Suit"
                             required ="required" />
                 </div>
@@ -122,13 +122,13 @@
                     <label for="postal-code">Postal Code:</label>
                     <input type="text"
                             name="postal-code"
-                            id="firstname" 
+                            id="postal-code" 
                             placeholder=" Postal Code"
                             required ="required" />
                 </div>
 
                 <div class="order-delivery-search-container">
-                    <span id="order-cancel">
+                    <span class="order-cancel">
                         <a href="menu.html">Cancel</a>
                     </span>
     
@@ -139,20 +139,20 @@
                     </div>
                 </div>
             </form>
-        </section>
+        </div>
 
         <hr>
 
         <!--Section 03: Order Summary-->
         <section class="order-section" id="order-summary-section">
             <h3>Order Summary</h3>
-            <p id="order-dates"><a href="#order-date">Delivery</a> for <a href="#order-date">Today</a> at <a href="#order-date">8pm<a></p>
+            <p class="order-dates"><a href="#order-date">Delivery</a> for<a href="#order-date">Today</a> at <a href="#order-date">8pm</a></p>
 
             <article class="order-summary-article">
-                <div class="order-summary-container" id="order-summary-main">
+                <div class="order-summary-container main">
                     <div class="order-summary-left-box">
-                        <span id="order-summary-number">1</span>
-                        <span id="order-summary-menu-name">Zzhusam</span>
+                        <span class="order-summary-number">1</span>
+                        <span class="order-summary-menu-name">Zzhusam</span>
                     </div>
                     <span>$46.68</span>
                 </div>
@@ -162,17 +162,16 @@
                 </div>
 
                 <div class="order-summary-container third">
-                    <span class="order-summary-edit"><a class="order-summary-link" 
-                    href="menu.html">Edit</a></span>
+                    <span class="order-summary-edit"><a href="menu.html" class="order-summary-link">Edit</a></span>
                     <span class="order-summary-remove">Remove</span>
                 </div>
             </article>
 
             <article class="order-summary-article">
-                <div class="order-summary-container" id="order-summary-main">
+                <div class="order-summary-container main">
                     <div class="order-summary-left-box">
-                        <span id="order-summary-number">1</span>
-                        <span id="order-summary-menu-name">Spicy Chicken</span>
+                        <span class="order-summary-number">1</span>
+                        <span class="order-summary-menu-name">Spicy Chicken</span>
                     </div>
                     <span>$23.10</span>
                 </div>
@@ -182,25 +181,22 @@
                 </div>
 
                 <div class="order-summary-container third">
-                    <span class="order-summary-edit"><a class="order-summary-link"
-                    href="menu.html">Edit</a></span>
+                    <span class="order-summary-edit"><a href="menu.html"  class="order-summary-link">Edit</a></span>
                     <span class="order-summary-remove">Remove</span>
                 </div>
             </article>
 
             <article class="order-summary-article">
-                <div class="order-summary-container" id="order-summary-main">
+                <div class="order-summary-container main">
                     <div class="order-summary-left-box">
-                        <span id="order-summary-number">2</span>
-                        <span id="order-summary-menu-name">Corn Cheese</span>
+                        <span class="order-summary-number">2</span>
+                        <span class="order-summary-menu-name">Corn Cheese</span>
                     </div>
                     <span>$12.00</span>
                 </div>
 
                 <div class="order-summary-container third">
-                    <span class="order-summary-edit"><a 
-                    class="order-summary-link"
-                    href="menu.html">Edit</a></span>
+                    <span class="order-summary-edit"><a href="menu.html" class="order-summary-link">Edit</a></span>
                     <span class="order-summary-remove">Remove</span>
                 </div>
             </article>
@@ -234,7 +230,7 @@
             </form>
 
             <div class="order-container">
-                <span id="order-cancel">
+                <span class="order-cancel">
                     <a href="#order-date-section">Cancel</a>
                 </span>
 
@@ -252,14 +248,14 @@
         <!--Section 04: Submit Order-->
         <section class="order-section" id="submit-order-section">
             <h3>Submit Order</h3>
-            <p id="order-dates"><a href="#order-date">Delivery</a> for <a href="#order-date">Today</a> at <a href="#order-date">8pm<a></p>
+            <p class="order-dates"><a href="#order-date">Delivery</a> for <a href="#order-date">Today</a> at <a href="#order-date">8pm</a></p>
 
             <article class="order-article">
                 <h4>Contact Info</h4>
 
                 <form action="#"
                   method="post"
-                  id="order-form">
+                  id="order-submit-form">
 
                     <div class="firstname">
                         <label for="firstname">First Name:</label>
@@ -305,7 +301,7 @@
 
                 <form action="#"
                   method="post"
-                  id="order-form">
+                  id="order-payment-form">
 
                     <div class="cardnumber">
                         <label for="cardnnumber">Card Number:</label>
@@ -317,7 +313,7 @@
                     </div>
                 
                     <div class="payment-date">
-                        <label for="payment-date">Date:</label>
+                        <label for="payment-date" id="order-payment-date">Date:</label>
                         <div class="payment-select-container">
                             <select>
                                 <option value="01">January</option>
@@ -356,10 +352,10 @@
                     
                     <div class="zip">
                         <label for="zip">Zip:</label>
-                        <input type="zip"
+                        <input type="text"
                             name="zip"
                             id="zip" 
-                            placeholder=" zip"
+                            placeholder=" text"
                             required ="required" />
                     </div>
                 </form>
@@ -412,6 +408,7 @@
                             placeholder=" $custom amount"
                             required ="required" />
                     </div>
+                </form>
     
             </article>
         </section>
@@ -443,7 +440,7 @@
 
             <form action="#"
                   method="post"
-                  id="order-agree-form">
+                  id="order-agree-form-a">
 
               <fieldset class="order-agree-fieldset">
                   
@@ -451,14 +448,14 @@
                           id="check" 
                           name="agree"
                           value="check"
-                          required="checked" />	
+                          checked />	
                   <label  for="check">Agree on verified orders before precess.</label>	
                       
               </fieldset>	
             </form>
 
             <div class="order-container">
-                <div id="order-cancel">
+                <div class="order-cancel">
                     <a href="#order-date-section">Cancel</a>
                 </div>
 
@@ -473,7 +470,7 @@
         <!--Section 06: Review Receipt-->
         <section class="order-section" id="review-receipt-section">
             <h3>Submit Order</h3>
-            <p id="order-dates"><a href="#order-date">Delivery</a> for <a href="#order-date">Today</a> at <a href="#order-date">8pm<a></p>
+            <p class="order-dates"><a href="#order-date">Delivery</a> for <a href="#order-date">Today</a> at <a href="#order-date">8pm</a></p>
             
             <div class="review-receipt-container">
                 <!--Article 01: Address-->
@@ -501,10 +498,10 @@
                     </div>
                     
                     <article class="order-summary-article">
-                        <div class="order-summary-container" id="order-summary-main">
+                        <div class="order-summary-container main">
                             <div class="order-summary-left-box">
-                                <span id="order-summary-number">1</span>
-                                <span id="order-summary-menu-name">Zzhusam</span>
+                                <span class="order-summary-number">1</span>
+                                <span class="order-summary-menu-name">Zzhusam</span>
                             </div>
                             <span>$46.68</span>
                         </div>
@@ -521,10 +518,10 @@
                     </article>
         
                     <article class="order-summary-article">
-                        <div class="order-summary-container" id="order-summary-main">
+                        <div class="order-summary-container main">
                             <div class="order-summary-left-box">
-                                <span id="order-summary-number">1</span>
-                                <span id="order-summary-menu-name">Spicy Chicken</span>
+                                <span class="order-summary-number">1</span>
+                                <span class="order-summary-menu-name">Spicy Chicken</span>
                             </div>
                             <span>$23.10</span>
                         </div>
@@ -541,18 +538,16 @@
                     </article>
         
                     <article class="order-summary-article">
-                        <div class="order-summary-container" id="order-summary-main">
+                        <div class="order-summary-container main">
                             <div class="order-summary-left-box">
-                                <span id="order-summary-number">2</span>
-                                <span id="order-summary-menu-name">Corn Cheese</span>
+                                <span class="order-summary-number">2</span>
+                                <span class="order-summary-menu-name">Corn Cheese</span>
                             </div>
                             <span>$12.00</span>
                         </div>
         
                         <div class="order-summary-container third">
-                            <span class="order-summary-edit"><a 
-                            class="order-summary-link"
-                            href="menu.html">Edit</a></span>
+                            <span class="order-summary-edit"><a href="menu.html"  class="order-summary-link">Edit</a></span>
                             <span class="order-summary-remove">Remove</span>
                         </div>
                     </article>
@@ -568,7 +563,7 @@
                     <div class="order-submit-container">
                         <h5>Submit Order</h5>
 
-                        <div class="order-submit-para-container" id="order-submit-para-subcontainer">
+                        <div class="order-submit-para-container subcontainer">
                             <ul class="order-submit-ul">
                                 <li><strong>First Name:</strong> Jessica</li>
                                 <li><strong>Last Name:</strong> Cho</li>
@@ -581,7 +576,7 @@
                     <div class="order-submit-container">
                         <h5>Payment Method</h5>
 
-                        <div class="order-submit-para-container" id="order-submit-para-subcontainer">
+                        <div class="order-submit-para-container subcontainer">
                             <ul class="order-submit-ul">
                                 <li><strong>Card Number:</strong> 1234 1111 2222 3333</li>
                                 <li><strong>Date:</strong> February 2023</li>
@@ -594,7 +589,7 @@
                     <div class="order-submit-container">
                         <h5>Tip</h5>
 
-                        <div class="order-submit-para-container" id="order-submit-para-subcontainer">
+                        <div class="order-submit-para-container subcontainer">
                             <ul class="order-submit-ul">
                                 <li><strong>Custom Amount:</strong> $20.00</li>
                             </ul>
@@ -603,25 +598,25 @@
                 </article>
 
                 <!--Article 04: Total Amount-->
-                <aside id="total-amount-section four">
+                <aside class="total-amount-section four">
                     <article class="total-amount-article">
-                        <div class="order-total-amount-container"         id="review-total-amount">
+                        <div class="order-total-amount-container">
                             <h5>Subtotal</h5>
                             <p>$81.78</p>
                         </div>
                         
-                        <div class="order-total-amount-container"         id="review-total-amount">
+                        <div class="order-total-amount-container">
                             <h5>GST</h5>
                             <p>$3.00</p>
                         </div>
             
-                        <div class="order-total-amount-container"         id="review-total-amount">
+                        <div class="order-total-amount-container">
                             <h5>Tip</h5>
                             <p>$20.00</p>
                         </div>
             
                         
-                        <div class="order-total-amount-container"         id="review-total-amount">
+                        <div class="order-total-amount-container">
                             <h5>Total</h5>
                             <p>$104.78</p>
                         </div>
@@ -629,14 +624,14 @@
         
                     <form action="#"
                         method="post"
-                        id="order-agree-form">
+                        id="order-agree-form-b">
         
                     <fieldset class="order-agree-fieldset">
                         
                         <input  type="checkbox" 
-                                id="check" 
+                                id="verify" 
                                 name="agree"
-                                value="check"
+                                value="verify"
                                 checked />	
                         <label  for="check">Agree on verified orders before precess.</label>	
                             
@@ -644,7 +639,7 @@
                     </form>
         
                     <div class="order-container">
-                        <div id="order-cancel">
+                        <div class="order-cancel">
                             <a href="#order-date-section">Cancel</a>
                         </div>
         

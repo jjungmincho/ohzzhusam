@@ -99,6 +99,34 @@ hr {
     padding: 20px 0;
 }
 
+.order-summary-article > .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-summary-number {
+    background-color: var(--color-light-yellow);
+}
+
+.order-summary-menu-name {
+    margin: 0 10px; 
+}
+
+.order-cancel {
+    padding-right: 20px;
+}
+
+.order-cancel a {
+    color: var(--color-black);
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+.order-dates a {
+    color: var(--color-red);
+}
+
 .order-summary-left-box span {
     padding: 0 10px;
 }
@@ -246,6 +274,10 @@ hr {
     color: var(--color-red);
 }
 
+.subcontainer {
+    padding-top: 0;
+}
+
 
 /* 
 ------------
@@ -266,21 +298,27 @@ hr {
 }
 
 /* Form */
-#order-form,
+#order-delivery-form,
+#order-submit-form,
+#order-payment-form,
 #order-tip-form {
     background-color: var(--color-light-yellow);
     padding: 20px 10px;
     margin-top: 20px;
 }
 
-#order-form input,
+#order-delivery-form input,
+#order-submit-form input,
+#order-payment-form input,
 #amount {
     width: 100%;
     padding: 10px 5px;
     margin: 5px 0 15px;
 }
 
-#order-form textarea,
+#order-delivery-form textarea,
+#order-submit-form textarea,
+#order-payment-form textarea,
 #order-tip-form textarea {
     margin-bottom: 20px;
     width: 100%;
@@ -288,25 +326,6 @@ hr {
 }
 
 /*order summary */
-#order-dates a {
-    color: var(--color-red);
-}
-
-#order-summary-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#order-summary-number {
-    background-color: var(--color-light-yellow);
-    padding: 10px;
-}
-
-#order-summary-menu-name {
-    margin: 0 10px; 
-}
-
 #order-short-form {
     display: flex;
     padding: 3%;
@@ -334,15 +353,6 @@ hr {
     font-weight: 700;
 }
 
-#order-cancel {
-    padding-right: 20px;
-}
-
-#order-cancel a {
-    color: var(--color-black);
-    font-weight: 400;
-    font-size: 1.15rem;
-}
 
 /* Submit order */
 #order-contact-info-form {
@@ -355,9 +365,7 @@ hr {
 }
 
 /* Review Receipt */
-#order-submit-para-subcontainer {
-    padding-top: 0;
-}
+
 
 
 
@@ -400,7 +408,7 @@ hr {
         grid-column-start: 1;
     }
 
-    #review-total-amount {
+    .order-total-amount-container {
         max-width: 600px;
     }
 
@@ -413,7 +421,9 @@ hr {
 }
 
 @media screen and (min-width: 1200px) {
-    #order-form {
+    #order-delivery-form,
+    #order-submit-form,
+    #order-payment-form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
