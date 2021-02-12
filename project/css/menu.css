@@ -62,6 +62,10 @@
     padding: 3px;
 }
 
+.menu-icon > .fa-hotjar {
+    color: var(--color-red);
+}
+
 
 /* 
 ------------
@@ -69,10 +73,6 @@
 ------------
 */
 /* Menu */
-#hot {
-    color: var(--color-red);
-}
-
 #vegi {
     color: var(--color-green);
 }
@@ -81,7 +81,7 @@
     filter: grayscale(0.9)
 }
 
-#sold-out-img {
+#soldOut-img {
     cursor: not-allowed;
 }
 
